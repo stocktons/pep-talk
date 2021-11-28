@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import { randomPhrase } from './random';
+import React, { useState } from 'react';
+import titleCard from './title-card.png'
+
 
 function App() {
+  const [phrase, setPhrase] = useState('Smash that button for a pep talk, champ!');
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <img class="App-title-card" src={titleCard} alt="Pep Talk Generator with sad hippo" />
+      <p class="App-phrase">
+        { phrase }
+      </p>
+      <button class="App-button" onClick={() => setPhrase(randomPhrase)}>YEAH!</button>
+      <p class="App-credits">Based on the print from The Raccoon Society. <a href="https://theraccoonsociety.com/collections/rs-wall-charts/products/pep-talk-generator-print">Buy yours here</a>!</p>
     </div>
   );
 }
