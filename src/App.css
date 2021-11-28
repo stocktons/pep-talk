@@ -15,26 +15,27 @@
 }
 
 .App-button {
-  color: #492E1E;
+  color: #E06C5F;
+  background-color: #FDFAE5;
+  border: 2px solid #E06C5F;
   font-family: adrianna-extended,sans-serif;
   font-weight: 600;
   font-style: normal;
   font-size: 1.1rem;
   letter-spacing: 0.1rem;
   padding: 1rem;
-  background-color: #df9088;
   border-radius: 5px;
-  border: none;
-  box-shadow: 0px 1px 1px 1px rgb(70, 43, 26);
 }
 
 .App-button:hover {
-  background-color: #E06C5F;
+  color: #FDFAE5;
+  background-color: #e68075;
+  border: 2px solid #e68075;
   transform: translateY(1px);
 }
 
 .App-credits {
-  font-size: .85rem;
+  font-size: .9rem;
   padding-top: 3rem;
 }
 
