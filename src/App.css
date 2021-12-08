@@ -10,8 +10,14 @@
   max-width: 95vw;
 }
 
-.App-phrase {
+.App-phrase,
+.App-dedication {
   padding: 2rem;
+}
+
+.App-dedication {
+  font-size: 1rem;
+  color: #E06C5F;
 }
 
 .App-button {

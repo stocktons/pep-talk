@@ -10,6 +10,7 @@ function App() {
   return (
     <div className="App">
       <img class="App-title-card" src={titleCard} alt="Pep Talk Generator with sad hippo" />
+      <p class="App-dedication">Today's compliments are dedicated to Aleks N. because she is the epitome of awesomeness, and that's a fact.</p>
       <p class="App-phrase">
         { phrase }
       </p>
