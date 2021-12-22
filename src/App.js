@@ -9,13 +9,24 @@ function App() {
 
   return (
     <div className="App">
-      <img class="App-title-card" src={titleCard} alt="Pep Talk Generator with sad hippo" />
-      {/* <p class="App-dedication">Today's compliments are dedicated to Aleks N. because she is the epitome of awesomeness, and that's a fact.</p> */}
+      <img 
+        class="App-title-card" 
+        src={titleCard} 
+        alt="Pep Talk Generator with sad hippo" 
+      />
+      {/* <p class="App-dedication">Today's compliments are dedicated to _____ 
+      because they are the epitome of awesomeness, and that's a fact.</p> */}
       <p class="App-phrase">
         { phrase }
       </p>
-      <button class="App-button" onClick={() => setPhrase(randomPhrase)}>YEAH!</button>
-      <p class="App-credits">Based on the print from The Raccoon Society. <a href="https://theraccoonsociety.com/collections/rs-wall-charts/products/pep-talk-generator-print">Buy yours here</a>!</p>
+      <button 
+        class="App-button" onClick={() => setPhrase(randomPhrase)}>YEAH!
+      </button>
+      <p class="App-credits">
+        Based on the print from The Raccoon Society. <a href=
+        "https://theraccoonsociety.com/collections/rs-wall-charts/products/pep-talk-generator-print"> 
+        Buy yours here</a>!
+      </p>
     </div>
   );
 }
